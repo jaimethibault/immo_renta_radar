@@ -10,9 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180403102413) do
+ActiveRecord::Schema.define(version: 20180403164127) do
 
-  create_table "listings", force: :cascade do |t|
+  create_table "for_rent_listings", force: :cascade do |t|
+    t.string   "seloger_id"
+    t.float    "surface"
+    t.float    "rent_price"
+    t.string   "city"
+    t.integer  "cp"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "for_sale_listings", force: :cascade do |t|
     t.string   "seloger_id"
     t.float    "surface"
     t.float    "price"
