@@ -32,7 +32,7 @@ class SelogerApi
       ville       = element.xpath('ville').text
       cp          = element.xpath('cp').text
 
-      puts "#{idAnnonce} | #{prix.to_f.fdiv(surface.to_f).round(0)}€/m2 | #{surface}m2 pour #{prix}€ à #{cp} | #{ville}"
+      puts "#{idAnnonce} | #{surface.to_f == 0 ? "??" : prix.to_f.fdiv(surface.to_f).round(0)}€/m2 | #{surface}m2 pour #{prix}€ à #{cp} | #{ville}"
 
       if type_of_listing == 'sale'
         ForSaleListing.create!(seloger_id: idAnnonce, surface: surface.to_f, price: prix.to_f, city: ville, cp: cp)
