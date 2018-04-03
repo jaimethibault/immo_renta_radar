@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  seloger_id: MyString
+  surface: 1.5
+  price: 1.5
+  city: MyString
+  cp: 1
+
+two:
+  seloger_id: MyString
+  surface: 1.5
+  price: 1.5
+  city: MyString
+  cp: 1
