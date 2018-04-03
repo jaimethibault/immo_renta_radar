@@ -1,0 +1,2 @@
+class ForSaleListing < ApplicationRecord
+end

@@ -1,2 +1,0 @@
-class ListingForRent < ApplicationRecord
-end
