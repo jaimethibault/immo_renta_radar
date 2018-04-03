@@ -1,4 +1,4 @@
-require "rest-client"
+require 'rest-client'
 require 'nokogiri'
 
 def populate_listings_retrieved_by_seloger_api(type_bien, min_price, max_price, search_type, cp)
